@@ -1,0 +1,132 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: assets/www/css/fontello/font/iconpack.woff
+SHA1-Digest: kIKveKIcIO/r8MqavwvAnJ97yEw=
+
+Name: res/xml/config.xml
+SHA1-Digest: w4epJT07Q8cWCzD2tCnHJpRhRe8=
+
+Name: assets/www/js/libs/riot.js
+SHA1-Digest: /JbzELThf/0y/nlAR+N2h8Y1eOk=
+
+Name: assets/www/img/icons/48.png
+SHA1-Digest: J6fC/5eGto/SOxwAR6bSOplkm5Y=
+
+Name: assets/www/js/libs/EventEmitter.js
+SHA1-Digest: RfccCN6UszoNhw1m9wh8BICv2nI=
+
+Name: assets/www/img/icons/128.png
+SHA1-Digest: C4CvwRuKbha5fDFoRuu22bhQaho=
+
+Name: resources.arsc
+SHA1-Digest: 8NeKD9QR585LetnGkSu8ROFwRRM=
+
+Name: assets/www/css/fontello/css/iconpack-embedded.css
+SHA1-Digest: yo8BuaqVVjhRRdHLEB6GpoamrVg=
+
+Name: assets/www/phonegap.js
+SHA1-Digest: cLdCwgFSGQUpn+vaWz8EEQhREok=
+
+Name: assets/www/img/icons/512.png
+SHA1-Digest: IgBB9qZKxUfyUkNuXcaX8NyAzPg=
+
+Name: assets/www/js/ui/render.js
+SHA1-Digest: p/2tbKjmSK7k3/NzlkDKUH+sqnw=
+
+Name: assets/www/js/extend.js
+SHA1-Digest: omQ+0X3xLRUcOisLa44V2Q8xvBQ=
+
+Name: assets/www/manifest.webapp
+SHA1-Digest: 0yDH7TAsX6n9tIDetYDFFHlzoyI=
+
+Name: res/drawable-ldpi/icon.png
+SHA1-Digest: 2J9Tvy/YaxPRs/ZafKZe/EsVt/o=
+
+Name: AndroidManifest.xml
+SHA1-Digest: Si6bFHUVnQ8wO9T9LCqdGrsNWEE=
+
+Name: assets/www/js/findermodel.js
+SHA1-Digest: ScQu1hDe/swV1R/7NDfFaAD4EEs=
+
+Name: assets/www/js/ui/home.js
+SHA1-Digest: mvxrYpvudw9ffjsM0jhwlnNDMPQ=
+
+Name: res/drawable-mdpi/icon.png
+SHA1-Digest: Lw/SqxqQxDgeX1jWQ7pEzoJ873E=
+
+Name: assets/www/css/fontello/css/iconpack.css
+SHA1-Digest: /tHkyqBn31rpucPB/MW+K66nnyg=
+
+Name: assets/www/js/libs/utils.js
+SHA1-Digest: iYH3xVR25guiMEHkYnx1W0TcQZQ=
+
+Name: assets/www/js/route.js
+SHA1-Digest: NExqTIxwitFUdLThfUJBH4CX0fk=
+
+Name: assets/www/css/fontello/font/iconpack.svg
+SHA1-Digest: bew47V//6USx2tjb3YStdlCwYaA=
+
+Name: res/drawable-xhdpi/icon.png
+SHA1-Digest: V29pfkn63ZKvWbMehv1gXLydfEg=
+
+Name: assets/www/img/slant.svg
+SHA1-Digest: 3/5jedcLgQy+d+GUcuNFB5GqJN4=
+
+Name: assets/www/README.md
+SHA1-Digest: t7G4XjQuA1acM0IgQLwFQQq4p5E=
+
+Name: assets/www/img/icons/60.png
+SHA1-Digest: dGNiGsiy/FLsfI5pvT/1iER0Zg0=
+
+Name: assets/www/css/fontello/font/iconpack.ttf
+SHA1-Digest: H04pqBZ/Xm9BloP1jOBJRFlb0c4=
+
+Name: assets/www/js/libs/applait.finder.js
+SHA1-Digest: tG0xAQGNlEzGLI8JYQncPeQZQGY=
+
+Name: classes.dex
+SHA1-Digest: xkDDTjZxhhI/00BMyjLHi7pxYtM=
+
+Name: assets/www/css/fontello/css/iconpack-codes.css
+SHA1-Digest: vLEB0QGFSKMXOdiXrZu9mNCvpgU=
+
+Name: assets/www/js/ui/actions.js
+SHA1-Digest: HL7dgCPhnk0UcF1cbsKV7OAJmTs=
+
+Name: assets/www/css/fontello/font/iconpack.eot
+SHA1-Digest: RhXupxnKx7MsLir9kcFWh5Xqc04=
+
+Name: assets/www/cordova.js
+SHA1-Digest: cLdCwgFSGQUpn+vaWz8EEQhREok=
+
+Name: assets/www/css/fontello/LICENSE.txt
+SHA1-Digest: Gb8Bm1LCx5sJTQO96g6dVIWmoYU=
+
+Name: res/drawable/icon.png
+SHA1-Digest: V29pfkn63ZKvWbMehv1gXLydfEg=
+
+Name: assets/www/js/ui/detail.js
+SHA1-Digest: LrBwYOZqBotSktkWhwWwIAGeznw=
+
+Name: assets/www/js/init.js
+SHA1-Digest: HDeAiTI3N94G+fJBrl0Mo8WcqLA=
+
+Name: assets/www/css/fontello/css/animation.css
+SHA1-Digest: GBu8ieyXiYG/DvjHI5cQrls61qE=
+
+Name: assets/www/js/libs/modernizr.js
+SHA1-Digest: H8z4ljMsFcHquhpiV+YQZrCCZyQ=
+
+Name: assets/www/index.html
+SHA1-Digest: qvgnzH9W4azg1QwaE40h6ALvBro=
+
+Name: assets/www/LICENSE
+SHA1-Digest: 0HoqkFz1aIs+1CL79dD4tEEY8G8=
+
+Name: res/drawable-hdpi/icon.png
+SHA1-Digest: 7k0R15Eowd7viwJeIN6gaJ1z0j0=
+
+Name: assets/www/css/app.css
+SHA1-Digest: TKnKJkhPi9ezPz/ZlBpN2IuVVjM=
+

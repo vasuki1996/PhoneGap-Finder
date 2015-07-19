@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Finder</title>
+        <meta name="description" content="Search and pick files from device">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <script type="text/javascript" src="js/libs/modernizr.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="css/fontello/css/animation.css">
+        <link rel="stylesheet" type="text/css" href="css/fontello/css/iconpack.css">
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+    </head>
+
+    <body class="has-topnav has-bottomnav">
+
+        <nav id="topnav"></nav>
+
+        <!-- Home view -->
+        <article id="home" class="active-view slide-left">
+            <section></section>
+        </article>
+
+        <!-- About view -->
+        <article id="about" class="slide-right">
+            <section class="has-padding">
+                <h2>About</h2>
+                <p>A file search app for Firefox OS.</p>
+
+                <h3>What it does?</h3>
+                <p><em>Finder</em> searches all the files on your
+                    device by file name and shows you the files that match your search.</p>
+
+                <h3>What it doesn't?</h3>
+                <ul>
+                    <li>Search within a file.</li>
+                    <li>Search the web or your contacts or for other apps.</li>
+                    <li>Search your soul. It's a DIY thing.</li>
+                </ul>
+
+                <p>Made with <i class="icon-heart"></i> by
+                    <a href="http://applait.com" target="_blank">Applait</a>.
+                </p>
+
+                <p>Rate us in the
+                    <a href="https://marketplace.firefox.com/app/finder/ratings/add" target="_blank">
+                        Firefox Marketplace
+                    </a>.
+                </p>
+
+            </section>
+        </article>
+
+        <!-- Search result item view -->
+        <article id="detail" class="slide-bottom">
+            <section class="has-padding"></section>
+        </article>
+
+        <nav id="bottomnav"></nav>
+
+        <!-- Templates -->
+
+        <!-- topnav for home -->
+        <template id="tmpl-topnav-home">
+            <form id="searchform">
+                <input type="text" id="topnav-input" placeholder="Search..." maxlength="16" value="{searchkey}">
+            </form>
+            <button id="searchbtn">
+                <i class="icon-search"></i>
+            </button>
+        </template>
+
+        <!-- topnav for default pages -->
+        <template id="tmpl-topnav-default">
+            <h1>Finder</h1>
+            <button data-goto="#/about">
+                <i class="icon-help"></i>
+            </button>
+        </template>
+
+        <!-- bottomnav home template -->
+        <template id="tmpl-bottomnav-home">
+            <button id="aboutbtn" data-goto="#/about">
+                <i class="icon-help"></i>
+            </button>
+            <button id="resetbtn" data-goto="#/home">Reset</button>
+        </template>
+
+        <!-- bottomnav default template -->
+        <template id="tmpl-bottomnav-default">
+            <button id="backbtn" data-goto="back">
+                <i class="icon-left-open"></i>
+            </button>
+            <button id="resetbtn" data-goto="#/home">Reset</button>
+        </template>
+
+        <!-- bottomnav web activity template -->
+        <template id="tmpl-bottomnav-webactivity">
+            <button id="cancelbtn">
+                <i class="icon-cancel-circled"></i>
+            </button>
+            <button id="resetbtn" data-goto="#/home">Reset</button>
+        </template>
+
+        <!-- searchresults template -->
+        <template id="tmpl-searchresults">
+            <div id="searchresults-stats" class="has-padding">
+                <p>Found {filecount} file(s) matching <em>"{searchkey}"</em>.</p>
+            </div>
+            <div id="searchresults">{searchresults}</div>
+        </template>
+
+        <!-- searchresult item -->
+        <template id="tmpl-searchresult-item">
+            <div id="searchresult-item-{i}" class="searchresult-item" data-index="{i}" data-goto="#/detail/{i}">
+                <button>
+                    <i class="icon-{icontype}"></i>
+                </button>
+                <h3>{name}</h3>
+                <button>
+                    <i class="icon-right-open"></i>
+                </button>
+            </div>
+        </template>
+
+        <!-- search loading item -->
+        <template id="tmpl-loading">
+            <p class="text-center">
+                Searching for <em>"{searchkey}"</em>&hellip;<br>
+                This may take some time&hellip;
+            </p>
+            <p class="text-center"><i class="icon-spin2 animate-spin"></i></p>
+        </template>
+
+        <!-- no results template -->
+        <template id="tmpl-noresults">
+            <p class="text-center">
+                No files found matching the name <em>"{searchkey}"</em>.
+            </p>
+        </template>
+
+        <!-- search detail template -->
+        <template id="tmpl-detail">
+            <h3><i class="icon-{icontype}"></i> {name}</h3>
+            <ul class="list">
+                <li>Path: {path}</li>
+                <li>Size: {size}</li>
+                <li>Last Modified: {modified}</li>
+            </ul>
+            <div class="button-strip">
+                <button id="previewbtn" class="border" data-index="{i}">
+                    <i class="icon-eye"></i>
+                </button>
+                <button id="{shareorpickid}btn" class="border" data-index="{i}">
+                    <i class="icon-{shareorpickclass}"></i>
+                </button>
+            </div>
+        </template>
+
+        <!-- homepage stock text -->
+        <template id="tmpl-home-stock">
+            <p class="text-center">Type your query in the search box.<br> (e.g. ".jpg")</p>
+        </template>
+
+        <!-- dependencies -->
+        <script type="text/javascript" src="js/libs/riot.js"></script>
+        <script type="text/javascript" src="js/libs/EventEmitter.js"></script>
+        <script type="text/javascript" src="js/libs/applait.finder.js"></script>
+        <script type="text/javascript" src="js/libs/utils.js"></script>
+
+        <!-- app scripts -->
+        <script type="text/javascript" src="js/findermodel.js"></script>
+        <script type="text/javascript" src="js/extend.js"></script>
+        <script type="text/javascript" src="js/route.js"></script>
+        <script type="text/javascript" src="js/ui/home.js"></script>
+        <script type="text/javascript" src="js/ui/detail.js"></script>
+        <script type="text/javascript" src="js/ui/actions.js"></script>
+        <script type="text/javascript" src="js/ui/render.js"></script>
+        <script type="text/javascript" src="js/init.js"></script>
+    </body>
+
+</html>
